@@ -1,7 +1,7 @@
 homepage: "https://docs.qingque.cn/d/home/eZQB9GWrIY_zZV0zUpmk1Jqao?identityId=1oE4cJxM7Uq"
 documentation: "https://docs.qingque.cn/d/home/eZQB9GWrIY_zZV0zUpmk1Jqao?identityId=1oE4cJxM7Uq"
 versions:
-   - sha: a1bd40dbe2e6673da04e7c78f044c8d32a63cc30
+   - sha: a7d6cb5003f22b10b559b62d3c360737e15ae36a
      changeNotes:
       Version 0.0.2
       pixel_id could not be empty.
