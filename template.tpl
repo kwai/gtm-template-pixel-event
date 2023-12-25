@@ -41,7 +41,12 @@ ___TEMPLATE_PARAMETERS___
         "displayName": "Pixel ID",
         "simpleValueType": true,
         "help": "You can find your Pixel ID in Assets--web events",
-        "valueHint": "eg: 563028887941689429"
+        "valueHint": "eg: 563028887941689429",
+        "valueValidators": [
+          {
+            "type": "NON_EMPTY"
+          }
+        ]
       },
       {
         "type": "SELECT",
@@ -357,7 +362,7 @@ ___TEMPLATE_PARAMETERS___
 
 ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
-const version = '0_0_1';
+const version = '1_0_1';
 
 const gtmLog = require('logToConsole');
 const copyFromWindow = require('copyFromWindow');
@@ -618,7 +623,7 @@ scenarios:
     // Verify that the tag finished successfully.
     assertThat(Calls['kwaiq.track'].length).isStrictlyEqualTo(1);
     assertThat(Calls['kwaiq.track'][0].eventName).isEqualTo('contentView');
-    assertThat(Calls['kwaiq.track'][0].params.partner).isEqualTo('gtm0_0_1');
+    assertThat(Calls['kwaiq.track'][0].params.partner).isEqualTo('gtm1_0_1');
     assertThat(Calls['kwaiq.track'][0].params.content_type).isEqualTo('product');
     assertThat(Calls['kwaiq.track'][0].params.content_id).isEqualTo('aaa');
     assertThat(Calls['kwaiq.track'][0].configs.pixelId).isEqualTo('1');
@@ -781,6 +786,6 @@ setup: |-
 
 ___NOTES___
 
-Created on 2023/12/18 14:41:53
+Created on 2023/12/25 10:28:35
 
 
