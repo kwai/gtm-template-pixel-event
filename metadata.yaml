@@ -1,6 +1,10 @@
 homepage: "https://docs.qingque.cn/d/home/eZQB9GWrIY_zZV0zUpmk1Jqao?identityId=1oE4cJxM7Uq"
 documentation: "https://docs.qingque.cn/d/home/eZQB9GWrIY_zZV0zUpmk1Jqao?identityId=1oE4cJxM7Uq"
 versions:
+   - sha: a1bd40dbe2e6673da04e7c78f044c8d32a63cc30
+     changeNotes:
+      Version 1.0.1
+      feat: pixel_id could not be empty.
    - sha: fc36b417ee2dbe480eb533e7905fd18dcdd77052 
      changeNotes:
       Version 1.0.0
